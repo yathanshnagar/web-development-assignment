@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One</title>
+   <link rel="stylesheet" href="index.css" />
+   <!-- We are deferring the script being loaded because we need the full html document to be loaded first -->
+</head>
+<body>
+   <!--************My Code Starts************-->
+   <header class="black-header">
+      <h1>Cartoonopia</h1>
+      <p1>The home of characters and cartoons!</p1>
+   </header>
+   <!--************My Code Ends************-->
+   <div class="background-image-blur-whitewash"></div>
+   <form id="search-input" class="search-input">
+     <!-- <input id="search-input" type="text" placeholder="Search Characters">-->
+          <input id="searchInput" type="text" placeholder="Search Characters">
+          <ul id ="searchResults"></ul>
+     <table id="character-table" class="characterTable">
+      <tablebody>
+      <tr>
+         <th>Name</th>
+         <th>Strength</th>
+         <th>Speed</th>
+         <th>Skill</th>
+         <th>Fear Factor</th>
+         <th>Power</th>
+         <th>Intelligence</th>
+         <th>Wealth</th>
+         <th>Selected</th>
+      </tr>
+      </tablebody>
+      <!-- insert a row for each character here using javascript-->
+   </table>
+
+   <script defer type="text/javascript" src="search1.js"></script> 
+ 
+</body>
+</html>

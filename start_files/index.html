@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One</title>
+   <link rel="stylesheet" href="index.css" />
+   <!-- We are deferring the script being loaded because we need the full html document to be loaded first -->
+</head>
+<body>
+   <!--************My Code Starts************-->
+   <header class="black-header">
+      <h1>Cartoonopia</h1>
+      <p1>The home of characters and cartoons!</p1>
+   </header>
+   <!--************My Code Ends************-->
+   <div class="background-image-blur-whitewash"></div>
+   <form id="search-input" class="search-input">
+     <!-- <input id="search-input" type="text" placeholder="Search Characters">-->
+          <input id="searchInput" type="text" placeholder="Search Characters">
+          <ul id ="searchResults"></ul>
+     <table id="character-table" class="characterTable">
+      <tablebody>
+      <tr>
+         <th>Name</th>
+         <th>Strength</th>
+         <th>Speed</th>
+         <th>Skill</th>
+         <th>Fear Factor</th>
+         <th>Power</th>
+         <th>Intelligence</th>
+         <th>Wealth</th>
+         <th>Selected</th>
+      </tr>
+      </tablebody>
+      <!-- insert a row for each character here using javascript-->
+   </table>
+
+   <div class = "previous-comparison">
+      <div class = "line"></div>
+      <h5>Previous Comparisons</h5>
+      
+   </div>
+
+   <div class="filter-container">
+      <div class = "line"></div>
+      <p>Filters</p>
+      <div class="filter-item">
+        <label for="strength">Strength</label>
+        <input type="range" id="strength-filter" name="strength" min="20" max="80" value="50">
+      </div>
+      <div class="filter-item">
+        <label for="speed">Speed</label>
+        <input type="range" id="speed-filter" name="speed" min="20" max="80" value="50">
+      </div>
+      <div class="filter-item">
+        <label for="skill-filter">Skill</label>
+        <input type="range" id="skill-filter" min="0" max="100" value="0">
+      </div>
+      <div class="filter-item">
+        <label for="fear-factor-filter">Fear Factor</label>
+        <input type="range" id="fear-factor-filter" min="0" max="100" value="0">
+      </div>
+      <div class="filter-item">
+        <label for="power-filter">Power</label>
+        <input type="range" id="power-filter" min="0" max="100" value="0">
+      </div>
+      <div class="filter-item">
+        <label for="intelligence-filter">Intelligence</label>
+        <input type="range" id="intelligence-filter" min="0" max="100" value="0">
+      </div>
+      <div class="filter-item">
+        <label for="wealth-filter">Wealth</label>
+        <input type="range" id="wealth-filter" min="0" max="100" value="0">
+      </div>
+   </div>
+
+   <div class="main-line">
+
+      <figcaption>BATMAN</figcaption>
+      <div class="img-cropper">
+      <img src="images/batman.jpg" >
+         </div>
+      <h1>VS</h1>
+
+      <figcaption>MICKEY MOUSE</figcaption>
+      <div class="img-cropper">
+      <img src="images/mickeymouse.jpg" width="20%" height="50%">
+         </div>
+   </div>
+
+   <div class = "final-comparison">
+      <div class = "character-card1">
+
+      </div>
+      <div class = "comaprison-name">
+         <label for="strength-com">Strength</label>
+
+      </div>
+      <div class = "character-card2">
+
+      </div>
+   </div>
+
+   <!--<div style="display: flex; justify-content: center; align-items: center; background-color: aquamarine; margin-top: 1000px; position: absolute;"> 
+      Hello bitch
+   </div> -->
+
+
+   
+
+   <script defer type="text/javascript" src="search1.js"></script> 
+ 
+</body>
+</html>

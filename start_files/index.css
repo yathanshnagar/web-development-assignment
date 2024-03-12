@@ -1,0 +1,277 @@
+﻿h1, h2, h3, nav, footer {
+ font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 80%;
+   margin: 0;
+}
+
+.search-input {
+      text-align: center;
+      margin-top: 30px;
+      padding-right: 0;
+  }
+  
+  #searchInput {
+      padding: 10px;
+      margin-bottom: 10px;
+      padding-right: 500px;
+      width: 300px;
+      border: 1px solid #000000;
+      border-radius: 1px;
+      font-size: 16px;
+  }
+  
+  #searchResults {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+  }
+  
+  #searchResults li {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+      cursor: pointer;
+  }
+  
+  #searchResults li:hover {
+      background-color: #f0f0f0;
+  }
+
+/* My Code Starts */
+
+.black-header {
+   background-color: #28282B;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .black-header h1 {
+   color: white;
+   margin: 0;
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 75px;
+ }
+
+ .black-header p1 {
+   color: white;
+   margin: 0;
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 10px;
+ }
+/* My Code Ends */
+
+/* TODO: add a background image here somehow */
+.background-image-blur-whitewash {
+   background: url(images/background.jpg);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   filter: blur(15px) contrast(0.1) brightness(1.7);
+   z-index: -1;
+}
+
+.characterTable {
+   width: 813px;
+   margin-top: 20px;
+   margin-left: 553px;
+   border-collapse: collapse;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+}
+
+th {
+  background-color: #e9e9e9;
+  color: black;
+  outline: #000000;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+}
+
+.previous-comparison {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-left: 80%;
+  position: absolute;
+  bottom: 535px;
+  border: #000000 solid 2px ;
+  box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3); /* Shadow properties */
+}
+
+.previous-comparison h5 {
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 25px;
+  font-size: 13px;
+  bottom: 500px;
+  margin-bottom: 80px;
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+}
+
+.line {
+  width: 135px;
+  height: 50px;
+  border-bottom: 1px solid rgb(158, 158, 158);
+  margin-left: 10px;
+  position: absolute;
+  opacity: 0.3;
+}
+
+.main-line {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  background-color:#28282B;
+  /*border-bottom: 300px solid rgb(54, 54, 54);*/
+  position:relative;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.main-line h1 {
+  color: white;
+  font-family: "Georgia, Cambria, "Times New Roman", serif";
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.img-cropper {
+  display:inline; 
+  position: relative; 
+  width: 300px; 
+  height: 300px; 
+  overflow: hidden; 
+  border-radius: 50%;
+  margin-top: 50px;
+} 
+
+.main-line img {
+  padding-top: 100px;
+  width: auto; 
+  height: 100%; 
+  margin-left: -120px;
+  margin-top: -100px;
+}
+
+
+.final-comparison {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+
+}
+
+.filter-container {
+  width: 250px;
+  background-color: #f1f1f1;
+  padding: 10px;
+  margin-left: 125px;
+  position:absolute;
+  bottom: 350px;
+  border: #000000 solid 2px ;
+  box-shadow: 8px 8px 1px rgba(0, 0, 0, 0.3); /* Shadow properties */
+}
+
+.filter-container p {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-right: 150px;
+  font-size: 19px;
+  font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+ /* font-weight: bold;*/
+}
+
+.filter-item {
+  align-items: center;
+  display:flex;
+  margin-bottom: 10px;
+  justify-content:space-between;
+  font-weight: bold;
+}
+
+.filter-item label {
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 5px;
+  margin-left: 15px;
+}
+
+.filter-item input[type=range] { /* You can change the width as you like */
+  -webkit-appearance: none; /* This removes the default appearance of the slider */
+}
+
+.filter-item input[type=range]::-webkit-slider-runnable-track {
+  height: 4px; /* You can change the height as you like */
+  background: #ddd; /* You can change the background color as you like */
+  border-radius: 2px; /* You can change the border radius as you like */
+}
+
+.filter-item input[type=range]::-webkit-slider-thumb {
+  width: 12px; /* You can change the width as you like */
+  height: 12px; /* You can change the height as you like */
+  background: #333; /* You can change the background color as you like */
+  border-radius: 50%; /* This makes the thumb circular */
+  -webkit-appearance: none; /* This removes the default appearance of the thumb */
+  margin-top: -4px; /* This aligns the thumb with the track */
+}
+
+/* This is the style for the first ball */
+.filter-item input[type=range]::-webkit-slider-thumb::before {
+  content: ""; /* This is required for pseudo-elements */
+  width: 16px; /* You can change the width as you like */
+  height: 16px; /* You can change the height as you like */
+  background: white; /* You can change the background color as you like */
+  border: 2px solid black; /* You can change the border as you like */
+  border-radius: 50%; /* This makes the ball circular */
+  position: absolute; /* This allows you to position the ball */
+  left: -20px; /* This moves the ball to the left of the thumb */
+  top: -2px; /* This moves the ball to the center of the thumb */
+  content: calc((attr(value) - var(--min)) / (var(--max) - var(--min)) * 100%); /* This calculates and displays the percentage value */
+  color: black; /* You can change the text color as you like */
+  font-size: 12px; /* You can change the font size as you like */
+  font-weight: bold; /* This makes the text bold */
+  display: flex; /* This makes the text align horizontally and vertically */
+  align-items: center; /* This vertically centers the text */
+  justify-content: center; /* This horizontally centers the text */
+}
+
+/* This is the style for the second ball */
+.filter-item input[type=range]::-webkit-slider-thumb::after {
+  content: ""; /* This is required for pseudo-elements */
+  width: 16px; /* You can change the width as you like */
+  height: 16px; /* You can change the height as you like */
+  background: white; /* You can change the background color as you like */
+  border: 2px solid black; /* You can change the border as you like */
+  border-radius: 50%; /* This makes the ball circular */
+  position: absolute; /* This allows you to position the ball */
+  right: -20px; /* This moves the ball to the right of the thumb */
+  top: -2px; /* This moves the ball to the center of the thumb */
+  content: calc((attr(value) - var(--min)) / (var(--max) - var(--min)) * 100%); /* This calculates and displays the percentage value */
+  color: black; /* You can change the text color as you like */
+  font-size: 12px; /* You can change the font size as you like */
+  font-weight: bold; /* This makes the text bold */
+  display: flex; /* This makes the text align horizontally and vertically */
+  align-items: center; /* This vertically centers the text */
+  justify-content: center; /* This horizontally centers the text */
+}

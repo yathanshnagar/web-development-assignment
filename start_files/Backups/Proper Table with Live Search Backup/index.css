@@ -1,0 +1,107 @@
+﻿h1, h2, h3, nav, footer {
+ font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+body {
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 80%;
+   margin: 0;
+}
+
+.search-input {
+      text-align: center;
+      margin-top: 30px;
+      padding-right: 0;
+  }
+  
+  #searchInput {
+      padding: 10px;
+      margin-bottom: 10px;
+      padding-right: 500px;
+      width: 300px;
+      border: 1px solid #000000;
+      border-radius: 1px;
+      font-size: 16px;
+  }
+  
+  #searchResults {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0 0;
+  }
+  
+  #searchResults li {
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+      cursor: pointer;
+  }
+  
+  #searchResults li:hover {
+      background-color: #f0f0f0;
+  }
+
+/* My Code Starts */
+
+.black-header {
+   background-color: #28282B;
+   padding: 20px;
+   text-align: center;
+ }
+
+ .black-header h1 {
+   color: white;
+   margin: 0;
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 75px;
+ }
+
+ .black-header p1 {
+   color: white;
+   margin: 0;
+   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
+   font-size: 10px;
+ }
+/* My Code Ends */
+
+/* TODO: add a background image here somehow */
+.background-image-blur-whitewash {
+   background: url(images/background.jpg);
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-size: cover;
+   background-position: center;
+   filter: blur(15px) contrast(0.1) brightness(1.7);
+   z-index: -1;
+}
+
+.characterTable {
+   width: 813px;
+   margin-top: 20px;
+   margin-left: 553px;
+   border-collapse: collapse;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #e9e9e9;
+  color: black;
+  outline: #000000;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #000000;
+}
