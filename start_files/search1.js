@@ -89,7 +89,6 @@ fetch('data.json')
   })
   .catch(error => console.error('Error fetching JSON data:', error));
 
-
 // This is the JavaScript code to update the percentage values
 // Get all the slider inputs
 const sliders = document.querySelectorAll(".filter-item input[type=range]");
